@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/healthy-renewal/static/css/main.073c9b0a.css",
-    "main.js": "/healthy-renewal/static/js/main.f7bdd8c9.js",
-    "static/js/787.1f925f11.chunk.js": "/healthy-renewal/static/js/787.1f925f11.chunk.js",
-    "static/media/logo.svg": "/healthy-renewal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/healthy-renewal/static/css/main.d0f4c2e9.css",
+    "main.js": "/healthy-renewal/static/js/main.aa7f22be.js",
+    "static/media/logo.png": "/healthy-renewal/static/media/logo.c917bd36e0618635cb83.png",
     "index.html": "/healthy-renewal/index.html",
-    "main.073c9b0a.css.map": "/healthy-renewal/static/css/main.073c9b0a.css.map",
-    "main.f7bdd8c9.js.map": "/healthy-renewal/static/js/main.f7bdd8c9.js.map",
-    "787.1f925f11.chunk.js.map": "/healthy-renewal/static/js/787.1f925f11.chunk.js.map"
+    "main.d0f4c2e9.css.map": "/healthy-renewal/static/css/main.d0f4c2e9.css.map",
+    "main.aa7f22be.js.map": "/healthy-renewal/static/js/main.aa7f22be.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f7bdd8c9.js"
+    "static/css/main.d0f4c2e9.css",
+    "static/js/main.aa7f22be.js"
   ]
 }
