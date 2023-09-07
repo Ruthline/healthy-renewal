@@ -11,13 +11,13 @@ import SignUp from './pages/signup/SignUp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Routes>
-    <Route path='/healthy-renewal' element={<Home/>}></Route>
-    <Route path='/hr-home' element={<Navigate replace to={"/healthy-renewal"}/>}></Route>
-    <Route path='/aboutUs' element={<AboutUs/>}></Route>
-    <Route path='/signIn' element={<SingIn/>}></Route>
-    <Route path='/singUp' element={<SignUp/>}></Route>
-  </Routes>
+    <Routes>
+      <Route path='/healthy-renewal' element={<Home/>}></Route>
+      <Route path='/hr-home' element={<Navigate replace to={"/healthy-renewal"}/>}></Route>
+      <Route path='/aboutUs' element={<AboutUs/>}></Route>
+      <Route path='/signIn' element={<SingIn/>}></Route>
+      <Route path='/singUp' element={<SignUp/>}></Route>
+    </Routes>
   </BrowserRouter>
 );
 

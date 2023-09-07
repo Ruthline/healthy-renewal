@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/healthy-renewal/static/css/main.d0f4c2e9.css",
+    "main.js": "/healthy-renewal/static/js/main.aa7f22be.js",
+    "static/media/logo.png": "/healthy-renewal/static/media/logo.c917bd36e0618635cb83.png",
+    "index.html": "/healthy-renewal/index.html",
+    "main.d0f4c2e9.css.map": "/healthy-renewal/static/css/main.d0f4c2e9.css.map",
+    "main.aa7f22be.js.map": "/healthy-renewal/static/js/main.aa7f22be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f4c2e9.css",
+    "static/js/main.aa7f22be.js"
+  ]
+}
