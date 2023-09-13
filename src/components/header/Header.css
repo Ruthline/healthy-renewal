@@ -45,15 +45,17 @@ body{
     width: 70px;
 }
 
+
+
 .items{
     margin-top: 1rem;
     grid-area: items;
     display: none;
 }
-.items-tablet{
+.inside-tablet{
     display: none;
 }
-.item{
+.item, .item-tablet{
     padding: 0.5rem;
     text-decoration: none;
 }
@@ -98,8 +100,28 @@ body{
     font-family: 'Suez One', serif;
 }
 .search-hidden{
-    background-color: pink;
     display: none;
+    border-right: 2px solid #FFFFFF;
+
+}
+
+.search-hidden button{
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    border-left: 1px solid rgba(69, 45, 128, 0.11) ;
+    color:var(--dark-blue);
+    font-weight: bold;
+    font-family: 'Suez One', serif;
+}
+.search-hidden input{
+    padding: 5.3px 15px; 
+    border-radius: 10px 0px 0px 10px;
+    border: none ;
+    outline: none;
+    width: 80%;
+    background-color:var(--white);
 }
 .one-nav, .one-nav img{
     grid-area: one-nav;
@@ -253,6 +275,16 @@ body{
         display: flex;
         justify-content: flex-end;
     }
+    
+    .inside-tablet{
+        margin: 2px;
+        padding: 0.5rem 0.2rem;
+        display: unset;
+        display: grid;
+        background-color: var(--grey);
+        grid-template-areas: 
+        "buscador position-one position-two";
+    }
     .nav-group label{
         display: none;
     }
@@ -294,9 +326,22 @@ body{
         height: 19px;
     }
     .search-hidden{
+        grid-area: buscador;
         display: unset;
+        padding: 0;
+        text-align: center;
+        padding-top: 5px;
+        
     }
-    
+    .position-one{
+        grid-area: position-one;
+        text-align: center;
+        border-right: 2px solid #FFFFFF;
+    }
+    .position-two{
+        grid-area: position-two;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:1024px){

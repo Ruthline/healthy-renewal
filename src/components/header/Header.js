@@ -53,27 +53,25 @@ function Header() {
                     <Link to="/" className='sign Up'>Registrarse</Link>
                 </div>
 
-
-                <div className="items-tablet" >
-                            <div className=' item search-home'>
-                                <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
-                                <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
-                            </div>
-                        
-                        
-                            <Link to="/"  className=" item">¿Qué es una ficha antropométrica?</Link>
-                            <Link to="/" className=" item">Información planes</Link>
-                            <Link to="/hr-home" className=" item" >Healthy Renewal</Link>
-                        
-                            <div className='item search-home search-hidden'>
-                                    <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
-                                    <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
-                            </div>
+                <div className='items-tablet'>
+                    <div className="inside-tablet" >
+                            
+                                <Link to="/"  className=" item-tablet position-one">¿Qué es una ficha antropométrica?</Link>
+                                <Link to="/" className=" item-tablet position-two">Información planes</Link>
+                                
+                            
+                                <div className='item search-hidden'>
+                                        <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
+                                        <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+                                </div>
     
                        
                         
                         
                         </div>
+
+
+         </div>               
         </header>
         
     );
