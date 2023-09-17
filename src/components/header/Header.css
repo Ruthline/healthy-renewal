@@ -11,13 +11,7 @@ body{
     max-height: 100%;
     font-family: 'Antic Slab', serif;
 }
-:root{
-    --dark-blue:#022B3A;
-    --blue:#1F7A8C;
-    --light-blue:#BFDBF7;
-    --grey:#E1E5F2;
-    --white:#FFFFFF;
-}
+
 
 .header-index{
     padding: 0.2rem 1rem;

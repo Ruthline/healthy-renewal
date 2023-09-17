@@ -1,0 +1,65 @@
+.container-footer{
+    background-color: var(--grey);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+}
+.container-footer a, .container-footer p{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size:15px;
+}
+.container-footer h2{
+    color: var(--dark-blue);
+    font-size: 19px;
+    padding-top: 0.5rem;
+}
+
+.footer-logo img{
+    width: 170px;
+    height: 30px;
+}
+.company-section-footer{
+    color: var(--dark-blue);
+}
+.list-information-footer{
+    list-style-type:none;
+}
+/*
+.list-company-footer{
+    background-color: lightblue;
+}
+
+.information-footer{
+    background-color: pink;
+}
+.list-information-footer{
+    background-color: lightgreen;
+}
+.social-networking-footer{
+    background-color: violet;
+}
+.list-social-networking{
+    background-color: lightseagreen;
+}*/
+.list-company-footer, .list-information-footer, .list-social-networking{
+    padding: 1rem;    
+}
+
+.list-social-networking i, .list-social-networking a{
+    color: var(--dark-blue);
+    padding: 0px 3px;
+    font-size: 30px;
+}
+.facebook-icon{
+    margin-left: 10px;
+}
+
+@media screen and (min-width:768px){
+    .container-footer{
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    
+}
