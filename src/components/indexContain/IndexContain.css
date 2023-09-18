@@ -1,0 +1,72 @@
+.container-index{
+    margin: 1rem 0rem;
+}
+.invite-information{
+    background-image: linear-gradient(hsla(0,0%,100%,.642),hsla(0,0%,100%,.642)),url(../indexContain/people-index.png);
+    background-size: cover;
+    margin:0rem 1rem;
+    padding: 1rem;
+}
+.invite-information h2{
+    font-family: 'Suez One', serif;
+    padding: 1rem;
+}
+.invite-information p{
+    font-family: 'Antic Slab', serif;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: 0.18px;
+}
+.start-button-section{
+    height: 50px;
+    width: 40%;
+    margin: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: 'Suez One', serif;
+    padding: 1rem;
+    background-color: var(--dark-blue);
+    text-align: center;
+    
+}
+.start-button{
+    
+    text-decoration: none;
+    color: var(--white);
+
+}
+.image-index{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .invite-information h2, .invite-information p{
+        width: 85%;
+    }
+    .invite-information h2{
+        font-size: 30px;
+    }
+    .invite-information p{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .container-index{
+        display: flex;
+        margin: 2rem 0rem;
+    }
+    .invite-information{
+        background-image: none;
+        width: 60%;
+    }
+    .invite-information h2, .invite-information p{
+        width: 100%;
+    }
+    .image-index{
+        display: unset;
+        width: 35%;
+        margin:3rem;
+        background-image: url('../indexContain/people-index.png');
+        background-size: cover;
+    }
+}

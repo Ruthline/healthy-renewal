@@ -331,14 +331,11 @@ body{
         grid-area: position-one;
         text-align: center;
         border-right: 2px solid #FFFFFF;
+        color: var(--dark-blue);
     }
     .position-two{
         grid-area: position-two;
         text-align: center;
+        color: var(--dark-blue);
     }
 }
-
-@media screen and (min-width:1024px){
-      
-       
-    }
