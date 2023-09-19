@@ -44,7 +44,7 @@ function Header() {
                         <div className='styleButtonTablet'>
 
                             <Link to="/signIn" className='sign In'>Iniciar Sesión</Link>
-                            <Link to="/" className='sign Up'>Registrarse</Link>
+                            <Link to="/signUp" className='sign Up'>Registrarse</Link>
                             
                         </div>
                     </div>

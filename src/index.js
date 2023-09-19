@@ -16,7 +16,7 @@ root.render(
       <Route path='/hr-home' element={<Navigate replace to={"/healthy-renewal"}/>}></Route>
       <Route path='/aboutUs' element={<AboutUs/>}></Route>
       <Route path='/signIn' element={<SingIn/>}></Route>
-      <Route path='/singUp' element={<SignUp/>}></Route>
+      <Route path='/signUp' element={<SignUp/>}></Route>
     </Routes>
   </BrowserRouter>
 );

@@ -92,7 +92,7 @@ const handleSubmit=async(e)=>{
 			
             <Formulario action="" onSubmit={handleSubmit}>
                 <div className='login-up'>
-			        <h1 className='t-form'>Iniciar Sesión</h1>
+			        <h1 className='t-form'>Registrarse</h1>
                     <img src={LoginImg} alt=""></img>
                 </div>
 				<Input
