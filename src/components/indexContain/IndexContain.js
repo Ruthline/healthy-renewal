@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../indexContain/IndexContain.css';
-import PeopleImg from '../indexContain/people-index.png';
 
 
 function IndexContain() {

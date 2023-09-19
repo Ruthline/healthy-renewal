@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Logo from '../header/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass,faBars} from '@fortawesome/free-solid-svg-icons';
+
 function Header() {
     return(
         <header>
@@ -41,11 +42,13 @@ function Header() {
 
                     <div className='buttons-tablet'>
                         <div className='styleButtonTablet'>
-                            <Link to="/" className='sign In'>Iniciar Sesión</Link>
+
+                            <Link to="/signIn" className='sign In'>Iniciar Sesión</Link>
                             <Link to="/" className='sign Up'>Registrarse</Link>
+                            
                         </div>
-                        
                     </div>
+
                 </div>
 
                 <div className='buttons-mobile'>
@@ -69,7 +72,6 @@ function Header() {
                         
                         
                         </div>
-
 
          </div>               
         </header>
