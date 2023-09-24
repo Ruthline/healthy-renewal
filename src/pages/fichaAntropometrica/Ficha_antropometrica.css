@@ -1,0 +1,90 @@
+#general1{
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 200px;   
+}
+#tituloGeneral1{
+    text-align: center;
+    padding: 10px;
+}
+#sup,
+#inferior{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#divFoto{
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    width: 40%;
+}
+.diseño label{
+    margin-top: 10px;
+    font-weight: bold;  
+    color: #022B3A;  
+}
+.diseño input{
+    border: none; /* Borde del campo de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    background-color:#E1E5F2; /* Color de fondo */
+    outline: none; /* Quita el resaltado al hacer clic en el campo */
+    width: 120%; /* Ocupar el ancho completo de su contenedor */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+#supDerecha{
+    display: flex;
+    width: 60%;
+}
+#supIzq,
+#supMed,
+#supDer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#inferior{
+    display: flex;
+    flex-direction: row;
+}
+#inferiorIzq,
+#inferiorMid1,
+#inferiorMid2,
+#inferiorDer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    margin-left: 160px;
+}
+#divBoton{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px; 
+    margin-left: 20px;   
+}
+.botonActualizarFicha{
+    background-color: #022B3A;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 17px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.botonActualizarFicha:hover{
+    background-color: #022B3A;
+    transform: translateY(2px);
+}
+.botonActualizarFicha:active{
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    color: #022B3A;
+    font-weight: bold;
+}

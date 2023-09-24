@@ -1,0 +1,124 @@
+#cuadroExteriorActFicha{
+    background-color: #E1E5F2;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 200px;
+}
+#tituloActFicha{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#divGeneral{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.campoBlanco{
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.campoBlanco label{
+    display: flex;
+    margin-bottom: 7px;
+    font-weight: bold;  
+    color: #022B3A;  
+}
+.campoBlanco input,
+.campoBlanco select{
+    border: none; /* Borde del campo de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    background-color:#E1E5F2; /* Color de fondo */
+    outline: none; /* Quita el resaltado al hacer clic en el campo */
+    width: 80%; /* Ocupar el ancho completo de su contenedor */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.campoBlanco input:focus,
+.campoBlanco select:focus{
+    border: 1px solid #022B3A;
+}
+.campito{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+#cuadritoSupIzq{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+#izqSup{
+    display: flex;
+    margin-top: 10px;
+}
+#izqSup label{
+    margin-top: 10px;
+}
+#lblIndiceMasa,
+#txtIndiceMasa{
+    width: 60%;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+#lblFrecuenciaCardiacaActiva,
+#txtFrecuenciaCardiacaActiva{
+    width: 60%;
+    margin-left: 40px;    
+    margin-bottom: 10px;
+}
+#izqInf{
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+#izqInf input,
+#izqInf label{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+#cuadritoSupDer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 46%;
+}
+#der1{
+    width: 50%;
+    margin-left: 50px;    
+}
+#der1 label{
+    margin-top: 20px;
+}
+#der2{
+    width: 50%;
+}
+#der2 label{
+    margin-top: 20px;
+}
+#divInf{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#infSup2,
+#infDown2{
+    display: flex; 
+    margin-left: 60px;     
+}
+#infSup2 label,
+#infDown2 label{
+    padding-top: 10px;
+}
+#txtFuerzaLumb2,
+#txtCooperTest2{
+    width: 83%;
+}
+#txtBurpeTest2{
+    width: 91%;
+}
+

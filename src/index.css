@@ -17,3 +17,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+h1{
+  color: #022B3A;
+  font-size: 28px;
+}
+#imgbanner{
+  max-width: 100%;
+  height: auto;
+}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Formulario,Label,ContenedorTerminos,ContenedorBotonCentrado,Boton,MensajeExito,MensajeError} from '../../elements/formLogin/FormLogin';
+import {Formulario,ContenedorBotonCentrado,Boton,MensajeExito,MensajeError} from '../../elements/formLogin/FormLogin';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
 import Input from '../../components/input/Input';
@@ -9,7 +9,8 @@ import Footer from '../../components/footer/Footer';
 import { useNavigate } from "react-router";
 import axios from "axios";
 import Swal from 'sweetalert2';
-import LoginImg from '../../pages/signin/login.png'
+import LoginImg from '../../pages/signin/login.png';
+
 
 
 
@@ -17,7 +18,6 @@ const SignIn =()=>{
 	const [nombre, cambiarNombre] = useState({campo: '', valido: null});
 	const [correo, cambiarCorreo] = useState({campo: '', valido: null});
 	const [password, cambiarPassword] = useState({campo: '', valido: null});
-	const [terminos,cambiarTerminos]= useState(false);
 	const [formularioValido,cambiarFormularioValido]= useState(null); 
 
   const expresiones = {
@@ -28,12 +28,8 @@ const SignIn =()=>{
 		telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 	}
 
-const onChangeTerminos=(e)=>{
-cambiarTerminos(e.target.checked);
-}
+const history=useNavigate();
 
-
-const history=useNavigate();    
 const [data,setData]=useState({id:"",nombre:"" ,correo:"",telefono:""}); 
 
 const handleChange=({target})=>{
@@ -47,6 +43,8 @@ const url="http://localhost:2000/notificaciones";
 
 const handleSubmit=async(e)=>{
 	e.preventDefault();
+
+	history.push('/actualizar');
 	const response=await axios.post(url,data);//await espera hasta que se ejcute la petición
 	//console.log(response);
 	if (response.status === 201) {
@@ -70,8 +68,7 @@ const handleSubmit=async(e)=>{
 	if(
 		nombre.valido === 'true' &&
 		correo.valido === 'true' &&
-		password.valido === 'true' &&
-		terminos
+		password.valido === 'true'
 	){
 		cambiarFormularioValido(true);
 		cambiarNombre({campo: '', valido: null});

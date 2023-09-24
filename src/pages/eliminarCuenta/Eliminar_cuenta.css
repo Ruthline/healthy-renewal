@@ -1,0 +1,99 @@
+.contenedorExterior{
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Centra verticalmente el contenido */
+    min-height: 100%; /* Asegura que el contenido interno ocupe toda la altura disponible */
+}
+.contenedorInterno{
+    text-align: center; /* Alinea el contenido del div al centro horizontalmente */
+    background-color: #ffffff; 
+    padding: 60px; /* Agrega un espacio interior al div */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);    
+}
+.campoElim {
+    padding-left: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-direction: column;   
+}
+.campoElim label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;  
+    color: #022B3A;  
+    padding: 10px;
+    text-align: left;
+    width: 80%;
+}
+.campoElim input{
+    border: none; /* Borde del campo de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    background-color:#E1E5F2; /* Color de fondo */
+    outline: none; /* Quita el resaltado al hacer clic en el campo */
+    width: 80%; /* Ocupar el ancho completo de su contenedor */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.campoElim input:focus{
+    border: 1px solid #022B3A;
+}
+#divBotonesElim{
+    padding: 30px;  
+}
+#btnAcept{
+    background-color: #fffffff6; 
+    color:#022B3A; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+#btnAcept:hover{
+    background-color: #ffffffea;
+    transform: translateY(2px);
+}
+#btnAcept:active{
+    background-color: #022B3A;
+    transform: translateY(0);
+    color: #fff;
+}
+#btnCancel{
+    background-color: #022B3A; 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#btnCancel:hover{
+    background-color: #022B3A;
+    transform: translateY(2px);
+}
+#btnCancel:active{
+    background-color: aliceblue;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px){
+    .contenedorInterno{
+        padding:30px;
+    }
+    #divBotonesElim{
+        padding: 20px;
+    }
+    #btnAcept,
+    #btnCancel{
+        margin:5px 0;
+    }
+}

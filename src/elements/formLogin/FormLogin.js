@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const colores = {
 	borde: "#0075FF",
 	error: "#bb2929",
@@ -9,14 +10,15 @@ const colores = {
 	verceClaro:"rgb(146,204,2)",
 	amarillo:"rgb(255,185,0)",
 	azulOscuro:"rgb(38,39,59)",
-	purple:"rgb(69,45,128)"
-	
-
+	purple:"rgb(69,45,128)",
 }
 
 
 const Formulario = styled.form `
-	background-color: rgba(69, 45, 128, 0.11);
+	background-color: #FFFFFF;
+	border: 0.5px solid #E1E5F2;
+	border-radius: 10px;
+	box-shadow:3px 0px 30px rgba(163,163,163, 0.4);
 	margin:2rem auto;
     padding:2rem 3rem;
 	display:flex;
@@ -27,6 +29,7 @@ const Formulario = styled.form `
 const Label = styled.label`
 	display: block;
 	font-weight: bolder;
+	
 	padding: 10px 0px;
 	min-height: 40px;
 	cursor: pointer;
@@ -44,8 +47,8 @@ const GrupoInput = styled.div`
 
 const Input = styled.input`
 	width: 100%;
-	background: #fff;
-	border-radius: 3px;
+	background-color:#E1E5F2;
+	border-radius: 10px;
 	height: 45px;
 	margin-bottom:1rem;
 	line-height: 45px;
@@ -119,6 +122,7 @@ const ContenedorBotonCentrado = styled.div`
 	flex-direction: column;
 	align-items: center;
 	grid-column: span 2;
+	
 
 	@media (max-width: 800px){
 		grid-column: span 1;
@@ -133,8 +137,9 @@ const Boton = styled.button`
 	background: white;
 	color: #022B3A;
 	font-weight: bold;
-	border: 2px solid #022B3A;
-	border-radius: 50px;
+	border: 1px solid #E1E5F2;
+	box-shadow:3px 0px 30px rgba(163,163,163, 0.4);
+	border-radius: 20px;
 	cursor: pointer;
 	transition: .1s ease all;
 

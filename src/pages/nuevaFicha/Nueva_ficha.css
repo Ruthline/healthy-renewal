@@ -1,0 +1,280 @@
+#tituloNuevaFicha{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+#contenedorNuevaFicha{
+    background-color: #E1E5F2;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 200px;
+}
+.divInternoNuevaFicha{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.cuadrito{
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.cuadrito input,
+.cuadrito select{
+    border: none; /* Borde del campo de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    background-color:#E1E5F2; /* Color de fondo */
+    outline: none; /* Quita el resaltado al hacer clic en el campo */
+    width: 80%; /* Ocupar el ancho completo de su contenedor */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.cuadrito input:focus,
+.cuadrito select:focus{
+    border: 1px solid #022B3A;
+}
+.cuadrito label{
+    display: flex;
+    margin-bottom: 7px;
+    font-weight: bold;  
+    color: #022B3A;  
+}
+#contIzq,
+#contDer{
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#contIzq label,
+#contDer label{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#contIzq input,
+#contDer input{
+    margin-left: 30px;
+}
+#contIzq2,
+#contDer2{
+    width: 50%;
+}
+#contIzq2 label,
+#contDer2 label{
+    margin-top: 10px;
+}
+#divIzq{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#divDer{
+    background-color:#fff;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#divInf{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#divInf select{
+    text-align: center;
+}
+#infSup,
+#infDown{
+    display: flex; 
+    margin-left: 60px;     
+}
+#infSup label,
+#infDown label{
+    margin-top: 10px;
+}
+.campoInf{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#campoActFisica{
+    display: flex;
+    flex-direction: row;
+}
+#campoActFisica span{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.iconoInfo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 3px;
+    position: relative;
+}
+
+#divIzq,
+#divDer,
+#divInf{
+    flex:1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#divBotonesNewFicha{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#btnCancelarNewFicha{
+    background-color: #fffffff6; 
+    color:#022B3A; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+#btnCancelarNewFicha:hover{
+    background-color: #ffffffea;
+    transform: translateY(2px);
+}
+#btnCancelarNewFicha:active{
+    background-color: #022B3A;
+    transform: translateY(0);
+    color: #fff;
+}
+#btnAceptarNewFicha{
+    background-color: #022B3A; 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#btnAceptarNewFicha:hover{
+    background-color: #022B3A;
+    transform: translateY(2px);
+}
+#btnAceptarNewFicha:active{
+    background-color: aliceblue;
+    transform: translateY(0);
+}
+#txtBurpeTest{
+    width: 86%;
+}
+#txtCooperTest{
+    width: 86%;
+}
+#listaActFisica{
+    width: 93.5%;
+}
+
+
+@media (max-width: 895px) {
+    #contenedorNuevaFicha {
+        display: flex;
+        flex-direction: column;
+        width:80%; 
+        margin-left: 50px; 
+        margin-top: 50px;                  
+    }
+    #divIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+    #contIzq,
+    #contDer{
+        margin-left: none;
+        margin-right: 50px;
+        width: 100%;
+    }
+    #contIzq2,
+    #contDer2{
+        width: 100%;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    #divDer{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #divBotonesNewFicha {
+        flex-direction: column; /* Cambia la dirección de los botones */
+    }
+    #divInf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #infSup{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #txtBurpeTest{
+        width: 80%;
+    }
+    #infDown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #infDown input{
+        width: 80%;
+    }
+    #infDown select{
+        width: 87%;
+   }
+    #btnCancelarNewFicha, #btnAceptarNewFicha {
+        width: 100%; /* Haz que los botones ocupen el ancho completo */
+        margin: 5px 0; /* Añade margen entre los botones */
+    }
+    #contIzq input,
+    #contIzq2 input,
+    #contDer input,
+    #contDer2 input,
+    #infSup input,
+    #infDown input{
+        text-align: center;
+        font-size: 18px;
+    }
+    #infDown select{
+        font-size: 16px;
+    }
+    #globoTexto{
+        position: absolute;
+        top:1250px;
+        right: 5%;
+        left: 30%;
+        width: 50%;
+        height: 8%;
+        background-color: #022B3A;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media (min-width: 896px){
+    #globoTexto{
+        position: absolute;
+        top:550px;
+        padding: 10px;
+        height: 2%;
+        background-color: #022B3A;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+    }
+}

@@ -6,6 +6,8 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/aboutUs/AboutUs';
 import SingIn from './pages/signin/SignIn';
 import SignUp from './pages/signup/SignUp';
+import RegistroCuenta from './pages/registroCuenta/RegistroCuenta';
+import ActualizarDatos from './pages/actualizarDatos/ActualizarDatos';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +18,8 @@ root.render(
       <Route path='/hr-home' element={<Navigate replace to={"/healthy-renewal"}/>}></Route>
       <Route path='/aboutUs' element={<AboutUs/>}></Route>
       <Route path='/signIn' element={<SingIn/>}></Route>
-      <Route path='/signUp' element={<SignUp/>}></Route>
+      <Route path='/registro' element={<RegistroCuenta/>}></Route>
+      <Route path='/actualizar' element={<ActualizarDatos/>}></Route>
     </Routes>
   </BrowserRouter>
 );

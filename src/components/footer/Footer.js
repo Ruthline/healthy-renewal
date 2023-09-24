@@ -5,6 +5,14 @@ import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faInstagram, faFacebook, faYoutube, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import Logo from '../footer/logo.png';
 
+import Instagram from '../footer/insta.png';
+import Facebook from '../footer/face.png';
+import Twitter from '../footer/twit.png';
+import Whatsapp from '../footer/whats.png';
+
+
+
+
 function Footer() {
    return(
     <div className='container-footer'>
@@ -29,13 +37,13 @@ function Footer() {
             
         </div>
         <div className='social-networking-footer'>
-            <h2>Síguenos</h2>
-            <div className='list-social-networking'>
-                <a href=''><i><FontAwesomeIcon icon={faInstagram}/></i></a>
-                <a href=''><i className='facebook-icon'><FontAwesomeIcon icon={faFacebook}/></i> </a>
-                <a href=''><i className='yt-icon'><FontAwesomeIcon icon={faYoutube}/></i> </a>
-                <a href=''><i><FontAwesomeIcon icon={faWhatsapp}/></i> </a>
-            </div>
+        <h1 id="tituloSiguenos">Síguenos</h1>
+                <div id="siguenosdiv">                   
+                            <img className="imgredes" src={Instagram} title="@Healthy.Renewal" />                   
+                            <img className="imgredes" src={Facebook} title="@Healthy.Renewal"/>                    
+                            <img className="imgredes" src={Twitter} title="#HealthyRenewal"/>                    
+                            <img className="imgredes" src={Whatsapp} title="HRWhatsapp"/>                    
+                </div>
         </div>
 
     </div>

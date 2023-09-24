@@ -44,7 +44,7 @@ function Header() {
                         <div className='styleButtonTablet'>
 
                             <Link to="/signIn" className='sign In'>Iniciar Sesión</Link>
-                            <Link to="/signUp" className='sign Up'>Registrarse</Link>
+                            <Link to="/registro" className='sign Up'>Registrarse</Link>
                             
                         </div>
                     </div>
@@ -52,8 +52,8 @@ function Header() {
                 </div>
 
                 <div className='buttons-mobile'>
-                   <Link to="/" className='sign In'>Iniciar Sesión</Link>
-                    <Link to="/" className='sign Up'>Registrarse</Link>
+                   <Link to="/signIn" className='sign In'>Iniciar Sesión</Link>
+                    <Link to="/registro" className='sign Up'>Registrarse</Link>
                 </div>
 
                 <div className='items-tablet'>
